@@ -1,0 +1,279 @@
+/* ========================================
+   ADMISSION BANNER
+   ======================================== */
+
+.admission-banner {
+  padding: 60px 0;
+  background: white;
+}
+
+.banner-card {
+  background: var(--gradient-sunset);
+  border-radius: 24px;
+  padding: 48px;
+  color: white;
+  box-shadow: var(--shadow-colored);
+}
+
+.banner-content {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.banner-emoji {
+  font-size: 4rem;
+  flex-shrink: 0;
+}
+
+.banner-content h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.banner-content p {
+  font-size: 1rem;
+  opacity: 0.9;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.banner-buttons .btn-primary {
+  background: white;
+  color: var(--orange-burst);
+  box-shadow: var(--shadow-soft);
+}
+
+.banner-buttons .btn-primary:hover {
+  box-shadow: var(--shadow-medium);
+}
+
+/* ========================================
+   PROCESS
+   ======================================== */
+
+.process-section {
+  padding: 100px 0;
+  background: var(--bg-cream);
+}
+
+.process-steps {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.step-card {
+  background: white;
+  padding: 32px 24px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: var(--shadow-soft);
+  flex: 1;
+  min-width: 180px;
+  max-width: 220px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.step-card:hover {
+  box-shadow: var(--shadow-medium);
+}
+
+.step-number {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 700;
+  font-size: 0.85rem;
+  margin: 0 auto 12px;
+}
+
+.step-emoji {
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+
+.step-card h3 {
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+.step-card p {
+  font-size: 0.8rem;
+  color: var(--text-medium);
+  line-height: 1.5;
+}
+
+.step-connector {
+  position: absolute;
+  right: -18px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-light);
+  font-size: 0.8rem;
+  z-index: 2;
+}
+
+/* ========================================
+   DOCUMENTS
+   ======================================== */
+
+.documents-section {
+  padding: 100px 0;
+  background: white;
+}
+
+.docs-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.docs-grid h2 {
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+
+.docs-grid > div:first-child > p {
+  font-size: 1rem;
+  color: var(--text-medium);
+  margin-bottom: 24px;
+}
+
+.docs-list {
+  list-style: none;
+}
+
+.docs-list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 0;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-bottom: 1px solid #F0F0F0;
+}
+
+.doc-check {
+  color: var(--leaf-green);
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+.docs-svg {
+  width: 100%;
+  height: auto;
+}
+
+/* ========================================
+   FEE STRUCTURE
+   ======================================== */
+
+.fee-section {
+  padding: 100px 0;
+  background: var(--bg-cream);
+}
+
+.fee-table-wrapper {
+  background: white;
+  border-radius: 24px;
+  padding: 40px;
+  box-shadow: var(--shadow-soft);
+  overflow-x: auto;
+}
+
+.fee-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.fee-table th {
+  padding: 16px 20px;
+  background: var(--gradient-sunset);
+  color: white;
+  font-family: 'Fredoka One', cursive;
+  font-size: 1rem;
+  text-align: left;
+}
+
+.fee-table th:first-child {
+  border-radius: 12px 0 0 0;
+}
+
+.fee-table th:last-child {
+  border-radius: 0 12px 0 0;
+}
+
+.fee-table td {
+  padding: 16px 20px;
+  font-size: 0.95rem;
+  border-bottom: 1px solid #F0F0F0;
+}
+
+.fee-table tbody tr:hover {
+  background: #FFF8F0;
+}
+
+.fee-table tbody tr:last-child td:first-child {
+  border-radius: 0 0 0 12px;
+}
+
+.fee-table tbody tr:last-child td:last-child {
+  border-radius: 0 0 12px 0;
+}
+
+.fee-note {
+  margin-top: 20px;
+  font-size: 0.85rem;
+  color: var(--text-light);
+  font-style: italic;
+}
+
+/* ========================================
+   RESPONSIVE
+   ======================================== */
+
+@media (max-width: 900px) {
+  .banner-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .process-steps {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .step-card {
+    max-width: 100%;
+  }
+
+  .step-connector {
+    display: none;
+  }
+
+  .docs-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .banner-card {
+    padding: 28px 20px;
+  }
+
+  .banner-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .fee-table-wrapper {
+    padding: 20px;
+  }
+}

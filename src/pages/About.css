@@ -1,0 +1,337 @@
+/* ========================================
+   PAGE HEADER (Shared across About, Academics, etc.)
+   ======================================== */
+
+.page-header {
+  position: relative;
+  padding: 80px 0 60px;
+  background: linear-gradient(135deg, #FFF8F0, #FFF0E5, #E8F8F5);
+  text-align: center;
+  overflow: hidden;
+}
+
+.page-header-bg {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.header-shape {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.08;
+}
+
+.header-shape.s1 { width: 300px; height: 300px; background: var(--orange-burst); top: -100px; right: -50px; }
+.header-shape.s2 { width: 200px; height: 200px; background: var(--sky-blue); bottom: -80px; left: -30px; }
+.header-shape.s3 { width: 150px; height: 150px; background: var(--sun-yellow); top: 20%; left: 60%; }
+
+.page-header h1 {
+  font-size: 3rem;
+  margin-bottom: 12px;
+  position: relative;
+  z-index: 1;
+}
+
+.page-header p {
+  font-size: 1.15rem;
+  color: var(--text-medium);
+  position: relative;
+  z-index: 1;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* ========================================
+   ABOUT STORY
+   ======================================== */
+
+.about-story {
+  padding: 100px 0;
+  background: white;
+}
+
+.story-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.story-svg {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.story-text h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+
+.story-text p {
+  font-size: 1.05rem;
+  color: var(--text-medium);
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+.story-badges {
+  display: flex;
+  gap: 12px;
+  margin-top: 24px;
+  flex-wrap: wrap;
+}
+
+.story-badge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  background: var(--bg-cream);
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--orange-burst);
+  border: 2px solid rgba(255, 107, 53, 0.2);
+}
+
+/* ========================================
+   VISION & MISSION
+   ======================================== */
+
+.vision-mission {
+  padding: 100px 0;
+  background: var(--bg-cream);
+}
+
+.vm-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+
+.vm-card {
+  padding: 40px;
+  border-radius: 24px;
+  background: white;
+  box-shadow: var(--shadow-soft);
+  position: relative;
+  overflow: hidden;
+}
+
+.vm-card.vision {
+  border-top: 5px solid var(--sky-blue);
+}
+
+.vm-card.mission {
+  border-top: 5px solid var(--orange-burst);
+}
+
+.vm-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+}
+
+.vision .vm-icon {
+  background: #E8F8F5;
+  color: var(--sky-blue);
+}
+
+.mission .vm-icon {
+  background: #FFF0E5;
+  color: var(--orange-burst);
+}
+
+.vm-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+}
+
+.vm-card p {
+  font-size: 0.95rem;
+  color: var(--text-medium);
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+.vm-card ul {
+  list-style: none;
+}
+
+.vm-card ul li {
+  padding: 6px 0;
+  font-size: 0.9rem;
+  color: var(--text-medium);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.vm-card ul li::before {
+  content: '✓';
+  color: var(--leaf-green);
+  font-weight: 700;
+}
+
+/* ========================================
+   VALUES
+   ======================================== */
+
+.values-section {
+  padding: 100px 0;
+  background: white;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.value-card {
+  padding: 32px 24px;
+  background: var(--bg-cream);
+  border-radius: 20px;
+  border-top: 4px solid;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.value-card:hover {
+  box-shadow: var(--shadow-medium);
+}
+
+.value-emoji {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.value-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.value-card p {
+  font-size: 0.85rem;
+  color: var(--text-medium);
+  line-height: 1.6;
+}
+
+/* ========================================
+   PRINCIPAL
+   ======================================== */
+
+.principal-section {
+  padding: 100px 0;
+  background: var(--bg-cream);
+}
+
+.principal-card {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  background: white;
+  padding: 48px;
+  border-radius: 32px;
+  box-shadow: var(--shadow-medium);
+  border-left: 6px solid var(--orange-burst);
+}
+
+.principal-avatar {
+  flex-shrink: 0;
+  width: 120px;
+}
+
+.principal-avatar svg {
+  width: 100%;
+  height: auto;
+}
+
+.principal-quote {
+  font-family: 'Fredoka One', cursive;
+  font-size: 4rem;
+  color: var(--sun-yellow);
+  line-height: 1;
+  margin-bottom: -10px;
+}
+
+.principal-text p {
+  font-size: 1.05rem;
+  color: var(--text-medium);
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+.principal-info {
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 2px solid var(--bg-cream);
+}
+
+.principal-info strong {
+  display: block;
+  font-size: 1.1rem;
+  color: var(--orange-burst);
+}
+
+.principal-info span {
+  font-size: 0.85rem;
+  color: var(--text-light);
+}
+
+/* ========================================
+   RESPONSIVE
+   ======================================== */
+
+@media (max-width: 900px) {
+  .page-header h1 { font-size: 2.2rem; }
+  
+  .story-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .story-badges {
+    justify-content: center;
+  }
+
+  .vm-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .values-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .principal-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 32px;
+  }
+
+  .principal-avatar {
+    width: 100px;
+  }
+}
+
+@media (max-width: 600px) {
+  .page-header { padding: 60px 0 40px; }
+  .page-header h1 { font-size: 1.8rem; }
+
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .principal-card {
+    padding: 24px;
+  }
+}
